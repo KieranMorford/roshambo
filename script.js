@@ -4,8 +4,13 @@ let result = null
 let imageCom = null
 let timer = null
 let comChoice = null
+let x = 1
+
 document.querySelectorAll('img').forEach(i => {
     i.onclick = (event) => {
+        while (x === 1) {
+            x = 0
+            setTimeout(lag, 3500)
         // This is where you do stuff
         console.log(event.target)
         const pChoice = event.target.id
@@ -55,8 +60,10 @@ document.querySelectorAll('img').forEach(i => {
             }
             showPlayerSelection(pChoice)
             showComputerSelection()
-}
+        }
+    }
 })
+
 
 function showPlayerSelection(selection) {
     player.clearRect(0,0, 300, 300)
@@ -103,4 +110,8 @@ function showComputerSelection(){
     setTimeout(clearInterval, 3000, timer)
     setTimeout(fix, 3000)
     setTimeout(final, 3000, comChoice)
+}
+
+function lag() {
+    x = 1
 }
