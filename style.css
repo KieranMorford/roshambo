@@ -1,0 +1,29 @@
+#player{
+    border: 1px solid black;
+    display: inline-block;
+}
+#cpu{
+    border: 1px solid black;
+    display: inline-block;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+body{
+  margin: auto;
+  width: 75%;
+}
+
+#Images{
+    margin: auto;
+    width: 66%;
+    margin-bottom: 25px;
+}
+img{
+    width: 125px;
+}
+h1 {
+    margin: auto;
+    width: 29%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
